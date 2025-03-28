@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="simple.css" rel="stylesheet">
+      <script src="common.js" defer></script>
+    <title>Haptik meets KI</title>
+  </head>
+  <body>
+
+   <header>
+    <h1>Haptik meets KI</h1>
+    <p>Praktische Impulse zum Ausprobieren</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">👋 Start</a></li>
+        <li><a href="1.html">💡 Brainstorming</a></li>
+        <li><a href="2.html">🎲 Zufallsgenerator</a></li>
+        <li><a href="3.html">👤 Persona-Entwicklung</a></li>
+            <li><a href="4.html">🙃 Kopfstand mit Lego</a></li>
+             <li><a href="5.html">⁉️ Sokrates Post-It</a></li>
+    
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>🙃 Kopfstand mit Lego</h2> 
+ <p>Jetzt kommt der Kopfstand zurück. Kopiert euch den folgenden Prompt - und ihr bekommt mit der SCAMPER-Methode je 5 Ideen vorgeschlagen, was ihr Sinnvolles machen könntet. Ihr könnt entweder eine davon auswählen oder euch fällt noch eine bessere ein.</p>
+ <hr>
+ 
+   <div id="resultContainer">
+      <p id="resultText">Prompt wird geladen...</p>
+    </div>
+
+    <button id="copyButton">Text kopieren</button>
+
+    <hr>
+
+<p>
+    <p><a href="index.html"><button>⬅ Zurück zur Übersicht</button></a></p>
+    
+    
+ 
+
+  </main>
+
+<footer>
+  <p>Erstellt von Nele Hirsch <a href="https://ebildungslabor.de">(eBildungslabor)</a> für die <a href="https://edunautika.de">edunautika 2025</a> | Lizenz: <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0</a></p>
+</footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const challenge = localStorage.getItem('challenge') || '[keine Herausforderung eingegeben]';
+      const prompt = `Wir spielen gemeinsam ein Spiel, um ausgehend von einer schlechtestmöglichen Lernsituation zu einer besseren zu kommen. Dazu spielen wir als Gruppe. Hier ist unsere Beschreibung der schlechtmöglichsten Lernsituation: 
+${challenge} 
+Deine Aufgabe ist nun, Ideen zu entwickeln, wie wir diese Lernsituation positiv umgestalten können. Dazu nutzt du nacheinander die Buchstaben der SCAMPER Methode. 
+Du beginnst mit S: Substitute = Ersetze – Komponenten, Materialien, Personen. Du nennst uns 5 Ideen zur Umgestaltung unserer Lernsituation im Sinne von Substitute und fragst uns, welche uns am besten gefällt oder ob wir eine bessere Idee haben. 
+Dann macht du mit C weiter: Combine = Kombiniere – vermische mit anderen Zusatzfunktionen oder Aggregaten; überschneide mit Service, integriere Funktionalität - wieder 5 Ideen und wir können auswählen oder eine eigene Idee nennen.
+Danach folgen im gleichen Muster A: Adapt = Ändere ab, verändere Funktion, verwende ein Teil eines anderen Elements, einer Baugruppe, eines Aggregats, M: Modify = Steigere oder vermindere Größe, Maßstab oder -stäblichkeit, verändere Gestalt, variiere Attribute (Farbe, Haptik, Akustik, …), P: Put 	= „Put to another use“ – Finde weitere Verwendung(en), finde anderen Zusammenhang zur Nutzung, formuliere den Anwendungsbereich um, E: Eliminate = Entferne Elemente, Komponenten, reduziere auf Kernfunktion, vereinfache und R: Reverse = Kehre um, stülpe das Innere nach außen, stelle auf den Kopf, finde entgegengesetzte Nutzung
+Bitte achte auf kurze und prägnante und kreative Ideen.
+Am Ende gibst du uns eine Liste mit unseren ausgewählten Ideen, wie wir die Lernsituation verändern könnten.`;
+
+      document.getElementById('resultText').textContent = prompt;
+    });
+  </script>
+  
+
+
+  </body>
+</html>
