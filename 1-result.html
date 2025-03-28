@@ -9,27 +9,25 @@
   </head>
   <body>
 
-  <header>
+   <header>
     <h1>Haptik meets KI</h1>
     <p>Praktische Impulse zum Ausprobieren</p>
     <nav>
       <ul>
-        <li><a href="index.html">Start</a></li>
-        <li><a href="1.html">Brainstorming</a></li>
-        <li><a href="2.html">Zufallsgenerator</a></li>
-        <li><a href="3.html">Persona-Entwicklung</a></li>
-            <li><a href="4.html">Kopfstand mit Lego</a></li>
-             <li><a href="5.html">Sokrates Post-It</a></li>
+        <li><a href="index.html">👋 Start</a></li>
+        <li><a href="1.html">💡 Brainstorming</a></li>
+        <li><a href="2.html">🎲 Zufallsgenerator</a></li>
+        <li><a href="3.html">👤 Persona-Entwicklung</a></li>
+            <li><a href="4.html">🙃 Kopfstand mit Lego</a></li>
+             <li><a href="5.html">⁉️ Sokrates Post-It</a></li>
     
       </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Brainstorming</h2>
- <p>Jetzt könnt ihr mit dem Brainstorming starten:</p>
- 
- <p>Kopiert euch zunächst diesen Prompt und fügt ihn in ein Sprachmodell Eurer Wahl ein:</p>
+    <h2>Brainstorming</h2> 
+ <p>Jetzt kann es losgehen. Eine Person Eurer Gruppe sollte dazu diesen Prompt kopieren und in ein Sprachmodell Eurer Wahl einfüge. Lasst euch dann durch den weiteren Prozess führen.</p>
  <hr>
  
    <div id="resultContainer">
@@ -58,8 +56,8 @@
       const challenge = localStorage.getItem('challenge') || '[keine Herausforderung eingegeben]';
       const prompt = `Wir spielen ein kreatives Ideen-PingPong. Wir spielen als Gruppe und nutzen dazu Gegenstände, die vor uns auf dem Tisch liegen. Du spielst allein und immer im Wechsel mit uns.
 Die Herausforderung lautet: ${challenge}.
-Du beginnst, indem du uns bittest, eine erste Idee zu nennen und dazu den ersten Gegenstand zu nutzen, der vor uns auf dem Tisch liegt. Wir sollen uns also als Gruppe überlegen, auf welche Idee uns dieser Gegenstand bringt und die Idee mit dir teilen. Erst danach nennst du selbst eine Idee.
-Dann forderst du uns direkt zur nächsten Idee auf mit  – und so weiter.
+Du beginnst, indem du uns bittest, eine erste Idee zu nennen und dazu den ersten Gegenstand zu nutzen, der vor uns auf dem Tisch liegt. Wir sollen uns also als Gruppe überlegen, auf welche Idee uns dieser Gegenstand bringt. Rege uns dazu an, uns den Gegenstans genau anzuschauen und vielleicht auch zu erfühlen - und dann die gefundene Idee mit dir teilen. Erst danach nennst du selbst eine Idee.
+Dann forderst du uns direkt zur nächsten Idee auf mit dem nächsten Gegenstand, der vor uns liegt – und so weiter.
 Die Ideen sollen möglichst kurz, überraschend und unterschiedlich sein.
 Wiederhole den Wechsel so lange, bis wir aufhören zu spielen.`;
 
