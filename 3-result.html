@@ -27,7 +27,7 @@
 
   <main>
     <h2>👤 Persona-Entwicklung</h2> 
- <p>Bei dieser Übung folgt Haptik auf KI. Kopiert euch den folgenden Prompt und lasst euch für jede Person eurer Gruppe eine Persona-Beschreibung generieren. Kritzelt dann ein Mini-Portrait eurer Persona auf ein Blatt Papier. Mit diesem Mini-Portrait könnt ihr dann den folgenden Konzeptionsprozess gestalten.</p>
+ <p>Kopiert euch den folgenden Prompt und lasst euch für jede Person eurer Gruppe eine Persona-Beschreibung generieren. Kritzelt dann ein Mini-Portrait eurer Persona auf ein Blatt Papier. Mit diesem Mini-Portrait könnt ihr dann den folgenden Konzeptionsprozess gestalten. Bei dieser Übung folgt also Haptik erst im Anschluss an KI-Interaktion. Mit dem folgenden Prompt werdet ihr durch diesen Prozess geleitet.</p>
  <hr>
  
    <div id="resultContainer">
@@ -54,7 +54,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const challenge = localStorage.getItem('challenge') || '[keine Herausforderung eingegeben]';
-      const prompt = `Deine Aufgabe ist es, uns eine Persona zur Zielgruppe '${challenge}' vorzuschlagen. Schreibe bitte kurz und prägnant, wie sie heißt, wie alt sie ist, was sie gerne und weniger gerne mag, was ein typischer Charakterzug und/ oder ein besonderes Bedürfnis von ihr ist und wie sie zur Digitalisierung steht. Fordere uns auf, für diese Persona auf ein Blatt Papier für uns ein Mini-Portrait zu kritzeln und frage uns, ob wir noch weitere Personas benötigen.`;
+      const prompt = `Deine Aufgabe ist es, uns eine Persona zur Zielgruppe '${challenge}' vorzuschlagen. Schreibe bitte kurz und prägnant, wie sie heißt, wie alt sie ist, was sie gerne und weniger gerne mag, was ein typischer Charakterzug und/ oder ein besonderes Bedürfnis von ihr ist und wie sie zur Digitalisierung steht. Fordere uns auf, für diese Persona auf ein Blatt Papier für uns ein Mini-Portrait zu kritzeln und frage uns, ob wir noch weitere Personas benötigen. Wir wollen keine Änderungen an der Zielgruppe vornehmen.`;
 
       document.getElementById('resultText').textContent = prompt;
     });
