@@ -54,7 +54,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const challenge = localStorage.getItem('challenge') || '[keine Herausforderung eingegeben]';
-      const prompt = `Deine Aufgabe ist es, uns eine Persona zur Zielgruppe '${challenge}' vorzuschlagen. Schreibe bitte kurz und prägnant, wie sie heißt, wie alt sie ist, was sie gerne und weniger gerne mag, was ein typischer Charakterzug und/ oder ein besonderes Bedürfnis von ihr ist und wie sie zur Digitalisierung steht. Fordere uns auf, für diese Persona auf ein Blatt Papier für uns ein Mini-Portrait zu kritzeln und frage uns, ob wir noch weitere Personas benötigen. Wir wollen keine Änderungen an der Zielgruppe vornehmen.`;
+      const prompt = `Deine Aufgabe ist es, uns eine Persona zur Zielgruppe '${challenge}' vorzuschlagen. Schreibe bitte kurz und prägnant, wie sie heißt, wie alt sie ist, was sie gerne und weniger gerne mag, was ein typischer Charakterzug und/ oder ein besonderes Bedürfnis von ihr ist und wie sie zur Digitalisierung steht. Fordere uns auf, für diese Persona auf ein Blatt Papier für uns ein Mini-Portrait zu kritzeln und frage uns, ob wir noch weitere Personas benötigen. Wir wollen keine Änderungen an der Zielgruppe vornehmen und du sollst uns nicht fragen, welche Art weitere Persona wir wollen, sondern uns per Zufall eine vorschlagen.`;
 
       document.getElementById('resultText').textContent = prompt;
     });
